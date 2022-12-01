@@ -1,0 +1,28 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+    commands:
+      - echo Installing project dependencies..
+      - echo `pwd`.
+      - cd client
+      - echo "switched `pwd`"
+      - npm install
+      - npm install react-scripts
+      - npm run frontend-install
+  build:
+    commands:
+      - echo Initiating build...
+      - echo `pwd`
+      - npm run frontend-build
+      - echo Build completed
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo "switched `pwd`"
+artifacts:
+  files:
+    - "**/*"
+  base-directory: frontend/build
