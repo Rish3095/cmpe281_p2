@@ -3,11 +3,9 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 16
+      nodejs: 12
     commands:
       - echo Installing project dependencies..
-      - curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
-      - apt install -y nodejs
       - echo `pwd`.
       - cd client
       - echo "switched `pwd`"
