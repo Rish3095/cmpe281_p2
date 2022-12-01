@@ -11,6 +11,7 @@ phases:
       - npm install
       - npm install react-scripts
       - npm run frontend-install
+      - npm install react-scripts --prefix frontend
   build:
     commands:
       - echo Initiating build...
