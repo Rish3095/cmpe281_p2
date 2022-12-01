@@ -7,7 +7,6 @@ phases:
     commands:
       - echo Installing project dependencies..
       - echo `pwd`.
-      - cd client
       - echo "switched `pwd`"
       - npm install
       - npm install react-scripts
