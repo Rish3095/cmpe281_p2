@@ -17,9 +17,10 @@ phases:
   build:
     commands:
       - echo Initiating build...
-      - npm run frontend-build
+      - cd frontend
+      - npm run build
       - echo Build completed
 artifacts:
   files:
     - "**/*"
-  base-directory: frontend/build
+  base-directory: build
