@@ -17,7 +17,7 @@ phases:
   build:
     commands:
       - echo Initiating build...
-      - yarn run frontend-build
+      - npm run frontend-build
       - echo Build completed
 artifacts:
   files:
